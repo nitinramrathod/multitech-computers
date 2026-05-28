@@ -5,7 +5,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import FloatingActions from '@/components/shared/FloatingActions'
 import { Toaster } from '@/components/ui/toaster'
-import './globals.css'
+import '@/app/globals.css'
 
 const inter = Inter({ 
   subsets: ['latin'],
