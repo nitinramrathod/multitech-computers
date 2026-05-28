@@ -59,7 +59,7 @@ export default function ServicesPage() {
           <p className="text-blue-200 mb-8">Talk to our experts and get a free diagnosis. We&apos;ll recommend the right solution for your needs and budget.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="px-8 py-3.5 bg-white text-brand-700 rounded-xl font-bold hover:bg-orange-50 transition-all">Contact Us</Link>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-white/10 border border-white/20 text-white rounded-xl font-bold hover:bg-white/20 transition-all">WhatsApp Now</a>
+            <a href="https://wa.me/918459556244" target="_blank" rel="noopener noreferrer" className="px-8 py-3.5 bg-white/10 border border-white/20 text-white rounded-xl font-bold hover:bg-white/20 transition-all">WhatsApp Now</a>
           </div>
         </div>
       </div>

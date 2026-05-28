@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION = 'Your trusted destination for certified refurbis
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://multitechcomputers.in'
 export const CONTACT_EMAIL = 'rathod173ram@gmail.com'
 export const CONTACT_PHONE = '+91 98765 43210'
-export const WHATSAPP_NUMBER = '919876543210'
+export const WHATSAPP_NUMBER = '918459556244'
 export const ADDRESS = 'Shop No. 5, Ambad Road, Jalna, Maharashtra 431203'
 export const GOOGLE_MAPS_URL = 'https://maps.google.com/?q=Ambad,Jalna,Maharashtra'
 export const GOOGLE_MAPS_EMBED = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30326.91!2d75.8!3d19.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bda3db!2sJalna!5e0!3m2!1sen!2sin!4v1'

@@ -10,7 +10,7 @@ export default function ContactCTA() {
           {[
             { icon: Phone, title: 'Call Us', value: CONTACT_PHONE, href: `tel:${CONTACT_PHONE}`, color: 'text-blue-600 bg-blue-50 dark:bg-blue-900/20' },
             { icon: Mail, title: 'Email Us', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: 'text-purple-600 bg-purple-50 dark:bg-purple-900/20' },
-            { icon: MessageCircle, title: 'WhatsApp', value: 'Chat with us', href: 'https://wa.me/919876543210', color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20' },
+            { icon: MessageCircle, title: 'WhatsApp', value: 'Chat with us', href: 'https://wa.me/918459556244', color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20' },
             { icon: MapPin, title: 'Visit Store', value: 'Ambad, Jalna', href: '/contact', color: 'text-orange-600 bg-orange-50 dark:bg-orange-900/20' },
           ].map(item => (
             <a key={item.title} href={item.href} className="group flex items-center gap-4 p-5 rounded-2xl border border-border bg-card hover:shadow-xl hover:border-primary/30 transition-all">

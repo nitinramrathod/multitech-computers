@@ -60,7 +60,7 @@ export function debounce<T extends (...args: Parameters<T>) => ReturnType<T>>(
 }
 
 export function generateWhatsAppUrl(message: string): string {
-  const phone = '919876543210'
+  const phone = '918459556244'
   const encodedMessage = encodeURIComponent(message)
   return `https://wa.me/${phone}?text=${encodedMessage}`
 }

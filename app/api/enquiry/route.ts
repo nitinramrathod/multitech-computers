@@ -1,28 +1,38 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from "next/server";
+import resend from "@/lib/resend";
+import { ProductEnquiryEmailTemplate } from "@/lib/email-template/product-enquiry";
 
-export async function POST(request: NextRequest) {
+const mailTo:string = process.env.RESEND_MAIL_TO || "";
+const mailFrom:string = process.env.RESEND_FROM_EMAIL|| "";
+
+export async function POST(req: Request) {
   try {
-    const body = await request.json()
-    const { productName, productCode, name, mobile, email, message, type } = body
+    const body = await req.json();
+ 
+    const template = ProductEnquiryEmailTemplate(body);
+    const subject = "New Product Enquiry for " + body.productName; 
 
-    // In production, use Resend to send email
-    // const resend = new Resend(process.env.RESEND_API_KEY)
-    // await resend.emails.send({...})
+    const { data, error } = await resend.emails.send({
+      from: mailFrom,
+      to: mailTo,
+      subject: subject,
+      html: template,
+    });
 
-    // Simulate email sending
-    await new Promise(r => setTimeout(r, 500))
+    if (error) {
+      return NextResponse.json(error, { status: 400 });
+    }
+    return NextResponse.json({ success: true, message: 'Product enquiry received! We will contact you shortly.' })
 
-    console.log('Enquiry received:', { productName, productCode, name, mobile, email, message, type })
-
-    return NextResponse.json({
-      success: true,
-      message: 'Enquiry submitted successfully! We will contact you within 24 hours.',
-    })
   } catch (error) {
-    console.error('Enquiry error:', error)
     return NextResponse.json(
-      { success: false, message: 'Failed to submit enquiry. Please try again.' },
+      { error: "Something went wrong", logs: error },
       { status: 500 }
-    )
+    );
   }
 }
+
+
+
+
+

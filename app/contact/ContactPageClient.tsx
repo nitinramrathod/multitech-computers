@@ -20,7 +20,7 @@ type FormData = z.infer<typeof schema>
 const contactInfo = [
   { icon: Phone, title: 'Phone', value: CONTACT_PHONE, href: `tel:${CONTACT_PHONE}`, color: 'text-blue-600 bg-blue-50 dark:bg-blue-900/20' },
   { icon: Mail, title: 'Email', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: 'text-purple-600 bg-purple-50 dark:bg-purple-900/20' },
-  { icon: MessageCircle, title: 'WhatsApp', value: 'Chat with us now', href: 'https://wa.me/919876543210', color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20' },
+  { icon: MessageCircle, title: 'WhatsApp', value: 'Chat with us now', href: 'https://wa.me/918459556244', color: 'text-emerald-600 bg-emerald-50 dark:bg-emerald-900/20' },
   { icon: MapPin, title: 'Address', value: ADDRESS, href: '#map', color: 'text-orange-600 bg-orange-50 dark:bg-orange-900/20' },
 ]
 
